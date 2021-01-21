@@ -33,6 +33,7 @@ class Application:
         self.master = master
 
         root.title("hospital_management")
+        root.title('hospital_reservation_system')
 
         # creating the frames in the master
         self.left = Frame(master, width=800, height=720, bg='aliceblue')
@@ -86,7 +87,6 @@ class Application:
         self.info = Label(self.left, text = "예약 당일 반드시 원무팀 접수창구에서 예약확인 후 진료과로 가십시오.\n예약 후 내원하신 경우에도 진료실 사정에 따라 진료시간이 늦어질 수 있습니다.\n ",
                           justify = 'left', font = ('굴림 13 '), fg = 'black', bg = 'aliceblue')
         self.info.place(x=120, y=600)
-
 
         # Entries for all labels============================================================
         self.name_ent = Entry(self.left, width=25)
