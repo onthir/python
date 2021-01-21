@@ -9,7 +9,9 @@ import tkinter.messagebox
 class Security:
     def __init__(self, user):
        self.user = user
-
+       
+                   
+    
         
     def run(self):
 
@@ -26,8 +28,7 @@ class Security:
         try:
             BASE_DIR = os.path.dirname(os.path.abspath(__file__))
             word_path = os.path.join(BASE_DIR, 'word.txt')
-
-            word_f=open(word_path, 'r') 
+            word_f=open(word_path, 'r')             
         except IOError:
             print("보안 문자 파일이 존재하지 않습니다.")
         else:
